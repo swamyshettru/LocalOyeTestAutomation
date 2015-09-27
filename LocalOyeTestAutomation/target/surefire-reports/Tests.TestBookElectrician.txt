@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: Tests.TestBookElectrician
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 62.361 sec <<< FAILURE!
+BookElectrician(Tests.TestBookElectrician)  Time elapsed: 12.637 sec  <<< FAILURE!
+org.openqa.selenium.InvalidSelectorException: The given selector //input(@class='text-input ng-pristine ng-untouched ng-valid')[0] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //input(@class='text-input ng-pristine ng-untouched ng-valid')[0] because of the following error:
+SyntaxError: The expression is not a legal expression.
+Command duration or timeout: 19 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'swamy-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 48e9a65e-ebab-4f69-9676-33dd791522ef
+*** Element info: {Using=xpath, value=//input(@class='text-input ng-pristine ng-untouched ng-valid')[0]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at pages.LoElectricianServicePage.fillRequirments(LoElectricianServicePage.java:54)
+	at Tests.TestBookElectrician.BookElectrician(TestBookElectrician.java:46)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //input(@class='text-input ng-pristine ng-untouched ng-valid')[0] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //input(@class='text-input ng-pristine ng-untouched ng-valid')[0] because of the following error:
+SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'swamy-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Windows/TEMP/anonymous3590357346121931825webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10641)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Windows/TEMP/anonymous3590357346121931825webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10672)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Windows/TEMP/anonymous3590357346121931825webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Windows/TEMP/anonymous3590357346121931825webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Windows/TEMP/anonymous3590357346121931825webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Windows/TEMP/anonymous3590357346121931825webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
+
