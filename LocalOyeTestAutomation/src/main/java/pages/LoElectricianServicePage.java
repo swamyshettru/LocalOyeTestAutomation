@@ -1,73 +1,60 @@
 package pages;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoElectricianServicePage {
 
 	private WebDriver driver;
+	
+	//initialize the constructor
 
 	public LoElectricianServicePage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver=driver;
 	}
 	
-	//Fills the requiremnts & Submit
+	//method to fills the user requirements and Submit
 
 	public void fillRequirments()
 	
 	 {
 
+		//wait until the requirements section is visible
+		
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Electrical Repairs')]")));
-		//Click on electrical repairs "$x('//div[contains(text(),"Electrical Repairs")]')"
-
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Electrical Repairs')]")));
+		
+		//click on electrical installation
 		driver.findElement(By.xpath("//div[contains(text(),'Electrical Installations')]")).click();
 
-		//Click on Wall fan by "$x('//div[contains(text(),"Wall fan")]')"
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
+		//click on ceiling fan
 		driver.findElement(By.xpath("//div[contains(text(),'Ceiling fan')]")).click();
 
-		//Click on add to cart button by "$x('//button[contains(text(),"Add to Cart")]')"
-
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		//click on add to cart button
 		driver.findElement(By.xpath("//button[contains(text(),'Add to Cart')]")).click();
 
-		//Click on checkout $x('//button[contains(text(),"Checkout")]')
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
+		//click on checkout $x('//button[contains(text(),"Checkout")]')
 		driver.findElement(By.xpath("//button[contains(text(),'Checkout')]")).click();		
 
-		//Click on next by "$x('//button[@class="button orange not-rounded-next ng-scope"]')"
-		
+		//click on next button
 		driver.findElement(By.xpath("//button[@class='button orange not-rounded-next ng-scope']")).click();
 
-		//add additional info $x('//input[@class="text-input ng-pristine ng-untouched ng-valid"]')[0]
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		
+		//enter additional requirements f user
 		driver.findElement(By.xpath("//input(@class='text-input ng-pristine ng-untouched ng-valid')[0]")).sendKeys("This is sample additional requirement");
 
-		//click on next by "$x('//button[contains(text(),"Next")]')[0]"
-
+		//click on next
 		driver.findElement(By.xpath("//button[contains(text(),'Next')]')[0]")).click();
 
-		//click on calander icon by "$x('//span[@class="input-group-addon"]')"
-		
+		//click on calander
 		driver.findElement(By.xpath("//span[@class='input-group-addon']')")).click();
 
-
-		//Click on date by "$x('//td[contains(text(),"10")]')[0]"
-
+		//select a date
 		driver.findElement(By.xpath("//td[contains(text(),'10')]')[0]")).click();
 
-		//Click on time by "$x('//span[contains(text(), "6:00 PM")]')"
-
+		//select the time
 		driver.findElement(By.xpath("//span[contains(text(), '6:00 PM')]')")).click();
 }
 }

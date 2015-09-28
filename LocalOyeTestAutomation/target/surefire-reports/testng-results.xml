@@ -2,55 +2,36 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests.TestBookElectrician" duration-ms="60766" started-at="2015-09-26T14:18:45Z" finished-at="2015-09-26T14:19:46Z">
+  <suite name="Tests.TestBookElectrician" duration-ms="265411" started-at="2015-09-27T09:19:13Z" finished-at="2015-09-27T09:23:38Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="60766" started-at="2015-09-26T14:18:45Z" finished-at="2015-09-26T14:19:46Z">
+    <test name="Command line test" duration-ms="265411" started-at="2015-09-27T09:19:13Z" finished-at="2015-09-27T09:23:38Z">
       <class name="Tests.TestBookElectrician">
-        <test-method status="PASS" signature="setup()[pri:0, instance:Tests.TestBookElectrician@24a67]" name="setup" is-config="true" duration-ms="48101" started-at="2015-09-26T19:48:45Z" finished-at="2015-09-26T19:49:33Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Tests.TestBookElectrician@24a67]" name="setup" is-config="true" duration-ms="255031" started-at="2015-09-27T14:49:13Z" finished-at="2015-09-27T14:53:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="BookElectrician()[pri:0, instance:Tests.TestBookElectrician@24a67]" name="BookElectrician" duration-ms="12624" started-at="2015-09-26T19:49:33Z" finished-at="2015-09-26T19:49:46Z">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+        <test-method status="FAIL" signature="BookElectrician()[pri:0, instance:Tests.TestBookElectrician@24a67]" name="BookElectrician" duration-ms="10323" started-at="2015-09-27T14:53:28Z" finished-at="2015-09-27T14:53:38Z">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[The given selector //input(@class='text-input ng-pristine ng-untouched ng-valid')[0] is either invalid or does not result in a WebElement. The following error occurred:
-InvalidSelectorError: Unable to locate an element with the xpath expression //input(@class='text-input ng-pristine ng-untouched ng-valid')[0] because of the following error:
-SyntaxError: The expression is not a legal expression.
-Command duration or timeout: 19 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+              <![CDATA[Timed out after 10 seconds waiting for visibility of element located by By.xpath: //h3[contains(text(),'Bangalore')]
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'swamy-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 48e9a65e-ebab-4f69-9676-33dd791522ef
-*** Element info: {Using=xpath, value=//input(@class='text-input ng-pristine ng-untouched ng-valid')[0]}]]>
+Session ID: 4dcdc8a4-9228-4792-b225-af0e2fe61b29]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: The given selector //input(@class='text-input ng-pristine ng-untouched ng-valid')[0] is either invalid or does not result in a WebElement. The following error occurred:
-InvalidSelectorError: Unable to locate an element with the xpath expression //input(@class='text-input ng-pristine ng-untouched ng-valid')[0] because of the following error:
-SyntaxError: The expression is not a legal expression.
-Command duration or timeout: 19 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of element located by By.xpath: //h3[contains(text(),'Bangalore')]
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'swamy-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 48e9a65e-ebab-4f69-9676-33dd791522ef
-*** Element info: {Using=xpath, value=//input(@class='text-input ng-pristine ng-untouched ng-valid')[0]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at pages.LoElectricianServicePage.fillRequirments(LoElectricianServicePage.java:54)
-	at Tests.TestBookElectrician.BookElectrician(TestBookElectrician.java:46)
+Session ID: 4dcdc8a4-9228-4792-b225-af0e2fe61b29
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at pages.LoHomePage.navigateElectrianSection(LoHomePage.java:36)
+	at Tests.TestBookElectrician.BookElectrician(TestBookElectrician.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -84,22 +65,44 @@ Session ID: 48e9a65e-ebab-4f69-9676-33dd791522ef
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //input(@class='text-input ng-pristine ng-untouched ng-valid')[0] is either invalid or does not result in a WebElement. The following error occurred:
-InvalidSelectorError: Unable to locate an element with the xpath expression //input(@class='text-input ng-pristine ng-untouched ng-valid')[0] because of the following error:
-SyntaxError: The expression is not a legal expression.
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//h3[contains(text(),'Bangalore')]"}
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'swamy-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4dcdc8a4-9228-4792-b225-af0e2fe61b29
+*** Element info: {Using=xpath, value=//h3[contains(text(),'Bangalore')]}
+	at sun.reflect.GeneratedConstructorAccessor8.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:861)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 35 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//h3[contains(text(),'Bangalore')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'swamy-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Windows/TEMP/anonymous3590357346121931825webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10641)
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Windows/TEMP/anonymous3590357346121931825webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10672)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Windows/TEMP/anonymous3590357346121931825webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Windows/TEMP/anonymous3590357346121931825webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Windows/TEMP/anonymous3590357346121931825webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Windows/TEMP/anonymous3590357346121931825webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/swamy/AppData/Local/Temp/anonymous5875588567253804298webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/swamy/AppData/Local/Temp/anonymous5875588567253804298webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/swamy/AppData/Local/Temp/anonymous5875588567253804298webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/swamy/AppData/Local/Temp/anonymous5875588567253804298webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/swamy/AppData/Local/Temp/anonymous5875588567253804298webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookElectrician -->

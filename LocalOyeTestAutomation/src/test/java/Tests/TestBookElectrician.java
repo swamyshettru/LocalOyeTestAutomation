@@ -12,37 +12,36 @@ public class TestBookElectrician {
 
     WebDriver driver;
 	
-	//initialize browser
+	//setup the browser
 
 	@BeforeTest
-	public void setup()
-	{
-		//System.setProperty("webdriver.chrome.driver", "C:/Users/swamy/Downloads/chromedriver_win32/chromedriver.exe");
-//	driver=new ChromeDriver();
-		driver= new FirefoxDriver();
+	public void setup(){
+		
+	//create firefox browser oobject
+	driver= new FirefoxDriver();
 
 	//go to localoye homepage
 	driver.get("http://localoye.com");
+	
+	//maximize the browser wiondow
 	driver.manage().window().maximize();
 	
 	}
 
-
-	//Tests whether user is able to book an Electrician or not
+	//Test whether user is able to book an Electrician or not
 
 	@Test
 	public void BookElectrician()
 	 {
 	
-	//Creates Home page object and navigates to electrician section
-
-		LoHomePage HpObject = new LoHomePage(driver);
-		HpObject.navigateElectrianSection();
+	//Creates Home page object and navigates to electricians section
+	LoHomePage HpObject = new LoHomePage(driver);
+	HpObject.navigateElectrianSection();
 
 
 	//Creates Electrician Page Object and fills up & submits the user requirements
-
-		LoElectricianServicePage EpObject = new LoElectricianServicePage(driver);
-		EpObject.fillRequirments();
-}
+	LoElectricianServicePage EpObject = new LoElectricianServicePage(driver);
+	EpObject.fillRequirments();
+	
+	 }
 }
